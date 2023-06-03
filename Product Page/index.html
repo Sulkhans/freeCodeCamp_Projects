@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faber-Castell</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: calibri;
+        }
+        header {
+            width: 100%;
+            background-color: #dd2b27;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+        }
+        header img {
+            width: 200px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            width: 250px;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .div1 {
+            margin: 100px 0px 50px 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            line-height: 0;
+            font-size: 40px;
+        }
+        input[type="email"] {
+            margin-top: 30px;
+            padding: 5px;
+            width: 155px;
+            transform: scale(1.3);
+            border-radius: 0px;
+            border: 1px solid black;
+            font-family: calibri;;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #dd2b27;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: calibri;
+            border: 1px solid black;
+        }
+        .container {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .container img {
+            padding: 0px 50px 0px 0px;
+        }
+        .container div {
+            width: 60%;
+        }
+        .container h2 {
+            color: #dd2b27;
+            line-height: 0;
+        }
+        .block {
+            border: 1px solid black;
+            text-align: center;
+            margin: 20px;
+        }
+        .block :nth-child(1) {
+            width: 100%;
+            background-color: #dd2b27;
+            text-align: center;
+            padding: 1px 0;
+            color: white;
+        }
+        .block p {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 30px;
+            line-height: 0.5;
+        }
+        .block button {
+            border: 1px solid black;
+            background-color: #dd2b27;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px 0px 20px 0px;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #eeeeee;
+            margin: 0;
+        }
+        footer ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+        }
+        footer li {
+            margin: 20px;
+        }
+        footer a {
+            color: black;
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+            .container img {
+                padding: 0;
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+    </style>
+    <body>
+        <header id="header">
+            <div>
+                <img id="header-img" src="https://www.dolphinresearch.org.au/wp-content/uploads/2018/02/Faber-Castell-Logo_Red_reversed-scaled-1.jpg">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a id="nav-link" href="#features">Features</a></li>
+                    <li><a id="nav-link" href="#preview">Preview</a></li>
+                    <li><a id="nav-link" href="#price">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="div1" id="section1">
+            <h1>Companion for life</h1>
+            <i>since 1761</i>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" name="email" placeholder="Enter your email address" required> <br>
+                <input id="submit" type="submit" value="GET STARTED">
+            </form>
+        </div>
+        <div class="container" id="features">
+            <img src="https://cdn-icons-png.flaticon.com/512/67/67745.png" width="80">
+            <div>
+                <h2>Premium Materials</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque magni blanditiis ad deleniti ipsum, repudiandae nemo aut nisi in ut labore asperiores quia quae! Enim voluptas ullam suscipit impedit consequuntur!
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://cdn-icons-png.flaticon.com/512/66/66841.png" width="90">
+            <div>
+                <h2>Fast Shipping</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi omnis quisquam adipisci odit officia ut animi minima? Quasi soluta laudantium unde, velit ad molestias fuga saepe ducimus illum suscipit repellat!</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25643.png" width="75">
+            <div>
+                <h2>Quality Assurance</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque soluta impedit sequi molestiae eveniet, consequatur tempora excepturi facere officia? Quam corrupti sit reprehenderit, dolorem consequatur illum harum distinctio aut nemo.</p>
+            </div>
+        </div>
+        <div class="container" id="preview">
+            <iframe id="video" width="590" height="332" src="https://www.youtube.com/embed/SXegK7H6pTU" frameborder="0" allow="autoplay; encrypted-media; gyroscope;"></iframe>
+        </div>
+        <div class="container" style="width: 90%;" id="price">
+            <div class="block">
+                <div><p>24 COLOR PACK</p></div>
+                <h3>$24.99</h3>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <button>SELECT</button>
+            </div>
+            <div class="block">
+                <div><p>48 COLOR PACK</p></div>
+                <h3>$49.99</h3>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <button>SELECT</button>
+            </div>
+            <div class="block">
+                <div><p>96 COLOR PACK</p></div>
+                <h3>$89.99</h3>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <button>SELECT</button>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
