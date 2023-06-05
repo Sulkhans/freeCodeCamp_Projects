@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: end;
+    background-color: #020016;
+    position: fixed;
+    width: 100%;
+}
+.navbar a {
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 10px 20px 10px 0px;
+    font-family:  'Trebuchet MS';
+    color: #edf2f4;
+    border-radius: 30px;
+}
+.navbar a:hover {
+    background-color: #110f24;
+    transition: background-color ease 0.5s;
+}
+.navbar a:not(:hover) {
+    transition: background-color ease 0.5s;
+}
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #181938 6%, #020016 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid  #ffffff;
+}
+.about div h1  {
+    font-family: 'Trebuchet MS';
+    color: #edf2f4;
+    font-size: 4rem;
+}
+.about div h2 {
+    font-family: 'Trebuchet MS';
+    color: #edf2f4;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.about span:hover {
+    color: #ffbb00;
+    transition: color ease 0.5s;
+}
+.about span:not(:hover) {
+    transition: color ease-in 1s;
+}
+.projects {
+    width: 100%;
+    background-color: #020016;
+}
+.projects h1 {
+    font-family: 'Trebuchet MS';
+    font-size: 28px;
+    color: #edf2f4;
+    text-align: center;
+    padding: 30px;
+}
+hr { 
+    width: 70%;
+    margin: auto;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white;
+    color: #edf2f4;
+    flex-grow: 1;
+    background-color: #110f24;
+}
+.block img {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+.block a {
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    color: #edf2f4;
+    text-align: center;
+    margin: 25px;
+}
+.block span {
+    color: #edf2f400;
+}
+.block:hover span{
+    color: #edf2f4;
+    transition: color ease 1s;
+}
+.block:not(:hover) span{
+    transition: color ease 1s;
+}
+.button {
+    text-align: center;
+    padding: 75px;
+}
+.button a {
+    width: 130px;
+    background-color: #110f24;
+    border: 3px solid #edf2f4;
+    border-radius: 50px;
+    color: #edf2f4;
+    font-family:'Trebuchet MS';
+    font-size: 24px;
+    padding: 15px 30px;
+}
+.button span {
+    color: #edf2f400;
+}
+.button a:hover span {
+    color: #edf2f4;
+    transition: color ease 1s;
+}
+.button a:not(:hover) span {
+    transition: color ease 1s;
+}
+.contact {
+    width: 100%;
+    height: 45vh;
+    background-color: #020016;
+    background-image: linear-gradient(to top, #181938, #020016);
+    border-top: 5px solid #edf2f4;
+}
+.contact h1 {
+    font-family: 'Trebuchet MS';
+    font-size: 46px;
+    padding: 35px;
+    text-align: center;
+    color: #edf2f4;
+}
+.contact div {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    border-bottom: 5px solid white;
+    padding-bottom: 50px;
+}
+.contact a {
+    color: #edf2f4;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin: 25px;
+    border-radius: 50px;
+}
+.contact a:hover {
+    padding: 10px 20px ;
+    background-color: #181938;
+    transition: padding ease 1s;
+}
+.contact a:not(:hover) {
+    transition: padding ease 2s, background-color ease 0.5s;
+}
+@media (max-width: 950px) {
+    .about div h1  {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 700px) {
+    .about div h1  {
+        font-size: 2rem;
+    }
+    .about div h2  {
+        font-size: 1.5rem;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .contact h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .about div h1  {
+        font-size: 1.5rem;
+    }
+    .about div h2  {
+        font-size: 1.3rem;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .contact a {
+        margin: 5px;
+    }
+}
